@@ -12,7 +12,8 @@ public class MusicOrganizer
     private ArrayList<String> files;
     // A player for the music files.
     private MusicPlayer player;
-        
+    
+    private ArrayList<Track> trackList;
     /**
      * Create a MusicOrganizer
      */
@@ -125,6 +126,18 @@ public class MusicOrganizer
             {
                 player.playSample(filename);
             }
+        }
+    }
+    
+    /**
+     * Header for tracklist
+     */
+    private void trackList()
+    {
+        trackList = new ArrayList<Track>();
+        for (Track track : trackList)
+        {
+            //TBA
         }
     }
 
