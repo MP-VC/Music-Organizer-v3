@@ -117,6 +117,16 @@ public class MusicOrganizer
             System.out.println("No match");
         }
     }
+    public void playArtistTrack(String searchString)
+    {
+        for (String filename : files)
+        {
+            if(filename.contains(searchString))
+            {
+                player.playSample(filename);
+            }
+        }
+    }
 
     /**
      * Stop the player.
