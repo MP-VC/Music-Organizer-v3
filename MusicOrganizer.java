@@ -62,7 +62,7 @@ public class MusicOrganizer
         }
     }
     
-    /*
+    /**
      * Show a list of all the files in the collection with Index
      */
     public void listWithIndex()
@@ -95,6 +95,20 @@ public class MusicOrganizer
         if(validIndex(index)) {
             String filename = files.get(index);
             player.startPlaying(filename);
+        }
+    }
+    
+    /**
+     * List the names of files matching the given search string
+     */
+    public void listMatching(String searchString)
+    {
+        for (String filename : files)
+        {
+            if(filename.contains(searchString))
+            {
+                System.out.println(filename);
+            }
         }
     }
 
